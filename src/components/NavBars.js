@@ -1,5 +1,13 @@
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 export const NavBarOne = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(()=>{
+
+  },[show])
   return (
     <header
       className="position_top"
@@ -7,7 +15,7 @@ export const NavBarOne = () => {
         marginBottom: "40px",
       }}
     >
-      <div className="container-fluid">
+      <div className="container">
         <div className="row align-items-center">
           <div className="col col-sm-3 col-md-3 col-lg-3 col-xl-2">
             <div className="logo">
@@ -15,7 +23,7 @@ export const NavBarOne = () => {
             </div>
           </div>
           <div className="col col-sm-5 col-md-6 col-lg-6 col-xl-8 text-end">
-            <nav className="main-nav">
+            <nav className={"main-nav" + (show ? " slidenav" : "")}>
               <div className="mobile-menu-logo">
                 <img src="img/logo.png" alt="" />
               </div>
@@ -23,56 +31,41 @@ export const NavBarOne = () => {
                 <li className="has-child active">
                   <Link to="/">Home</Link>
                 </li>
-                <li>
-                  <a href="#">About us</a>
-                  <i className="bi bi-chevron-down"></i>
-                  <ul className="sub-menu">
-                  <li>
-                      <Link to="/about">About us</Link>
-                    </li>
-                    <li>
-                      <Link to="/trade">Trades</Link>
-                    </li>
-                  </ul>
+                <li className="has-child">
+                  <Link  to="/about">About us</Link>
                 </li>
+                <li className="has-child">
+                  <Link to="/trade">Trades</Link>
+                </li>
+
                 <li className="has-child">
                   <Link to="/services">Services</Link>
                 </li>
                 <li className="has-child">
-                  <a href="#">Emmigration</a>
-                  <i className="bi bi-chevron-down"></i>
-                  <ul className="sub-menu">
-                    <li>
-                      <Link to="/procedure">Procedure</Link>
-                    </li>
-                  </ul>
+                  <Link to="/procedure">Emmigration</Link>
+                </li>
+
+                <li className="has-child">
+                  <Link to="/job_oppurtunities">Jobs</Link>
                 </li>
                 <li className="has-child">
-                  <Link to="/job_oppurtunities">Jobs</Link>                  
-                </li>
-                <li>
                   <Link to="/contact_us">Contact us</Link>
                 </li>
               </ul>
-              <div className="get-quate dn">
-                <div className="cmn-btn">
-                  <Link to="/contact_us">Get a quote</Link>
-                </div>
-              </div>
             </nav>
             <div className="mobile-menu">
-              <a href="javascript:void(0)" className="cross-btn">
-                <span className="cross-top"></span>
-                <span className="cross-middle"></span>
-                <span className="cross-bottom"></span>
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 text-end">
-            <div className="get-quate">
-              <div className="cmn-btn">
-                <a href="contact.html">Get a quote</a>
-              </div>
+              <button
+                className="navbar-toggler"
+                onClick={() => {
+                  setShow(!show);
+                }}
+              >
+                {show ? (
+                  <CloseIcon style={{ color: "#000" }} fontSize="24" />
+                ) : (
+                  <MenuIcon style={{ color: "#000" }} fontSize="24px" />
+                )}
+              </button>
             </div>
           </div>
         </div>

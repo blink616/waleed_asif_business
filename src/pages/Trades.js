@@ -42,12 +42,14 @@ export const Trades = () => {
     <>
       <BreadCrumbMenu name="Trades" />
       <section className="project-area sec-mar">
-        <div className="container">
+        <div className="container border-wrapper" id="container">
           <div className="row g-4 project-items-wrapper">
+            <h1>Trades</h1>
             <TradeCard data={trade_data} />
           </div>
         </div>
       </section>
+      <div className="divider"></div>
     </>
   );
 };

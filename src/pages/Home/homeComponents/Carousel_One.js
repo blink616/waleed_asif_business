@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const Carousel_1 = (props) => {
+export const Carousel_One = (props) => {
     const sliderSettings = {
       dots: true,
       infinite: true,
@@ -27,7 +27,7 @@ export const Carousel_1 = (props) => {
                           <img src={slide.image_url} alt="" />
                         </div>
                         <div className="hero-content">
-                          <h2>Creative</h2>
+                          <h2 >Creative</h2>
                           <h1>
                             Best solution for your <span>{slide.span}</span>
                           </h1>

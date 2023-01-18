@@ -9,7 +9,9 @@ const AboutUs = (props) => {
           <div className="col-lg-6 col-xl-6">
             <div className="about-left">
               <div className="title black">
-                <span>About us</span>
+                <span style={{
+                  color: "black"
+                }}>About us</span>
                 <h2 className="mb-15">Direction with our company.</h2>
               </div>
               <p>

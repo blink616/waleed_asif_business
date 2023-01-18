@@ -11,13 +11,16 @@ const ServicesCards = (props) => {
                 <a href="#">{content.name}</a>
               </div>
               <div className="post-img">
-                  <img src={content.image} alt="" />
+                <img src={content.image} alt="" />
               </div>
-              <div className="news-content">
+              <div
+                className="news-content"
+                style={{
+                  color: "white",
+                }}
+              >
                 <h6>
-                  <span >
-                   {content.detail}
-                  </span>
+                  <span>{content.detail}</span>
                 </h6>
               </div>
             </div>

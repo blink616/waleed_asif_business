@@ -10,17 +10,17 @@ export const ShowProgress = (props) => {
         value={props.percentage}
         styles={{
           text: {
-            fill: "#d90a2c",
+            fill: "#b6bac2",
             fontSize: "25px",
             fontWeight: "bolder",
           },
           // Customize background - only used when the `background` prop is true
           trail: {
             // Trail color
-            stroke: "#f88",
+            stroke: "#b6bac2",
           },
           path: {
-            stroke: "#d90a2c",
+            stroke: "#b6bac2",
           },
         }}
         className="progress-bar-circle"

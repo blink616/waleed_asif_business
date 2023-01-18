@@ -7,7 +7,7 @@ const CoreValues = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-6 col-xl-6">
-            <div className="title black">
+            <div className="title">
               <span>Why Choose Finibus</span>
               <h2 className="mb-15">
                 success is just around the next online corner
@@ -15,14 +15,7 @@ const CoreValues = () => {
             </div>
             <div className="video-demo">
               <img src="img/play-video.jpg" alt="" />
-              <div className="play-btn">
-                <a
-                  className="popup-video"
-                  href="https://www.youtube.com/watch?v=0O2aH4XLbto"
-                >
-                  <i className="fas fa-play"></i> Play now
-                </a>
-              </div>
+             
             </div>
           </div>
           <div className="col-md-6 col-lg-6 col-xl-6">

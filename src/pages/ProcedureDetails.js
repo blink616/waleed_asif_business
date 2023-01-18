@@ -36,7 +36,7 @@ export const ProcedureDetails = () => {
   ];
   return (
     <>
-      <BreadCrumbMenu name="Project Details" />
+      <BreadCrumbMenu name="Emmigration Procedure" />
       <section className="service-area sec-pad">
         <div className="container">
           <div className="row">

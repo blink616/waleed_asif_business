@@ -38,16 +38,20 @@ export const Services = () => {
     <>
       <BreadCrumbMenu name="Services" />
       <section className="blog-news sec-mar">
-        <div className="blog-wrapper">
+        <div className="blog-wrapper" >
           <div className="row">
-            <div className="col-md-8 col-lg-8 col-xl-8">
-              <div className="row g-4">
+            <div className="col-md-8 col-lg-8 col-xl-8" id="services">
+              <div className="row g-4" style={{
+                textAlign: "center"
+              }}>
+              <h1>Services</h1>
                 <ServicesCards data={servicesCardData} />
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div className="divider"></div>
     </>
   );
 };

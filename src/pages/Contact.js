@@ -9,7 +9,6 @@ export const Contact = () => {
           <div className="row">
             <div className="col col-xl-6">
               <div className="title black">
-                <span>Get In Touch</span>
                 <h2>contact us if you have more questions.</h2>
               </div>
             </div>
@@ -32,8 +31,9 @@ export const Contact = () => {
                   <i className="bi bi-telephone"></i>
                 </div>
                 <h4>Phone</h4>
-                <a href="tel:0123456789102">+012-3456-789102</a>
-                <a href="tel:013456789102">+012-3456-789102</a>
+                <p>
+                 3456789
+                </p>
               </div>
             </div>
             <div className="col-md-6 col-lg-4 col-xl-4">
@@ -42,22 +42,9 @@ export const Contact = () => {
                   <i className="bi bi-envelope"></i>
                 </div>
                 <h4>Email</h4>
-                <a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#deb7b0b8b19ebba6bfb3aeb2bbf0bdb1b3">
-                  <span
-                    className="__cf_email__"
-                    data-cfemail="741d1a121b34110c15190418115a171b19"
-                  >
-                    [email&#160;protected]
-                  </span>
-                </a>
-                <a href="https://demo-egenslab.b-cdn.net/cdn-cgi/l/email-protection#3c4f494c4c534e487c59445d514c5059125f5351">
-                  <span
-                    className="__cf_email__"
-                    data-cfemail="22515752524d505662475a434f524e470c414d4f"
-                  >
-                    [email&#160;protected]
-                  </span>
-                </a>
+                <p>
+                  example@gmail.com
+                </p>
               </div>
             </div>
           </div>
@@ -127,6 +114,7 @@ export const Contact = () => {
           </div>
         </div>
       </section>
+      <div className="divider"></div>
     </>
   );
 };
